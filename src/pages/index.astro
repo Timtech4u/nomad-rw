@@ -13,38 +13,658 @@ import { SITE_TITLE, SITE_DESCRIPTION } from '../consts';
 	<body>
 		<Header />
 		<main>
-			<h1>🧑‍🚀 Hello, Astronaut!</h1>
-			<p>
-				Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template. This
-				template serves as a lightweight, minimally-styled starting point for anyone looking to build
-				a personal website, blog, or portfolio with Astro.
-			</p>
-			<p>
-				This template comes with a few integrations already configured in your
-				<code>astro.config.mjs</code> file. You can customize your setup with
-				<a href="https://astro.build/integrations">Astro Integrations</a> to add tools like Tailwind,
-				React, or Vue to your project.
-			</p>
-			<p>Here are a few ideas on how to get started with the template:</p>
-			<ul>
-				<li>Edit this page in <code>src/pages/index.astro</code></li>
-				<li>Edit the site header items in <code>src/components/Header.astro</code></li>
-				<li>Add your name to the footer in <code>src/components/Footer.astro</code></li>
-				<li>Check out the included blog posts in <code>src/content/blog/</code></li>
-				<li>Customize the blog post page layout in <code>src/layouts/BlogPost.astro</code></li>
-			</ul>
-			<p>
-				Have fun! If you get stuck, remember to <a href="https://docs.astro.build/"
-					>read the docs
-				</a> or <a href="https://astro.build/chat">join us on Discord</a> to ask questions.
-			</p>
-			<p>
-				Looking for a blog template with a bit more personality? Check out <a
-					href="https://github.com/Charca/astro-blog-template"
-					>astro-blog-template
-				</a> by <a href="https://twitter.com/Charca">Maxi Ferreira</a>.
-			</p>
+			<!-- Hero Section -->
+			<section class="hero">
+				<div class="hero-content">
+					<div class="hero-badge">🚀 Digital Nomad Journey</div>
+					<h1>Welcome to <span class="highlight">Nomad Rwanda</span></h1>
+					<p class="hero-description">
+						Discover the untold story of building a tech startup in Africa's most innovative nation. From business registration to scaling operations, follow my journey through Rwanda's thriving entrepreneurial ecosystem.
+					</p>
+					<div class="hero-actions">
+						<a href="/blog/initial-process-rwanda" class="cta-primary">Start Reading →</a>
+						<a href="/about" class="cta-secondary">About Me</a>
+					</div>
+				</div>
+				<div class="hero-visual">
+					<div class="flag-container">
+						<div class="rwanda-flag">
+							<div class="flag-stripe blue"></div>
+							<div class="flag-stripe yellow"></div>
+							<div class="flag-stripe green"></div>
+							<div class="flag-sun">☀️</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Stats Section -->
+			<section class="stats-section">
+				<div class="container">
+					<h2>Why Rwanda for Startups?</h2>
+					<div class="stats-grid">
+						<div class="stat-card">
+							<div class="stat-number">6</div>
+							<div class="stat-label">Hours</div>
+							<div class="stat-desc">Business Registration</div>
+						</div>
+						<div class="stat-card">
+							<div class="stat-number">#38</div>
+							<div class="stat-label">Global Rank</div>
+							<div class="stat-desc">Ease of Doing Business</div>
+						</div>
+						<div class="stat-card">
+							<div class="stat-number">95%</div>
+							<div class="stat-label">4G Coverage</div>
+							<div class="stat-desc">Digital Infrastructure</div>
+						</div>
+						<div class="stat-card">
+							<div class="stat-number">$0</div>
+							<div class="stat-label">Registration</div>
+							<div class="stat-desc">Company Setup Cost</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Journey Section -->
+			<section class="journey-section">
+				<div class="container">
+					<h2>My Rwanda Journey</h2>
+					<p class="journey-subtitle">Follow the complete story of building a business in the heart of Africa</p>
+					
+					<div class="journey-timeline">
+						<div class="timeline-line"></div>
+						
+						<div class="journey-step active">
+							<div class="step-icon">🏢</div>
+							<div class="step-content">
+								<h3>Initial Process</h3>
+								<p>Navigating Rwanda's startup-friendly ecosystem, business registration, and legal requirements</p>
+								<a href="/blog/initial-process-rwanda" class="step-link">Read the full story →</a>
+								<div class="step-meta">
+									<span class="step-date">May 2025</span>
+									<span class="step-status">Published</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="journey-step upcoming">
+							<div class="step-icon">🤝</div>
+							<div class="step-content">
+								<h3>Finding Community</h3>
+								<p>Connecting with local entrepreneurs, joining innovation hubs, and building meaningful relationships</p>
+								<div class="step-meta">
+									<span class="step-date">Coming Soon</span>
+									<span class="step-status upcoming-status">In Progress</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="journey-step upcoming">
+							<div class="step-icon">🏙️</div>
+							<div class="step-content">
+								<h3>Life in Kigali</h3>
+								<p>Daily experiences, cultural insights, and practical tips for living in Rwanda's capital</p>
+								<div class="step-meta">
+									<span class="step-date">Coming Soon</span>
+									<span class="step-status upcoming-status">Planned</span>
+								</div>
+							</div>
+						</div>
+						
+						<div class="journey-step upcoming">
+							<div class="step-icon">📈</div>
+							<div class="step-content">
+								<h3>Building & Growing</h3>
+								<p>Scaling operations, contributing to Africa's digital infrastructure, and lessons learned</p>
+								<div class="step-meta">
+									<span class="step-date">Coming Soon</span>
+									<span class="step-status upcoming-status">Planned</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- Quick Facts Section -->
+			<section class="facts-section">
+				<div class="container">
+					<h2>Rwanda at a Glance</h2>
+					<div class="facts-grid">
+						<div class="fact-card">
+							<div class="fact-icon">🌍</div>
+							<h3>Strategic Location</h3>
+							<p>Gateway to East Africa's 300+ million consumer market</p>
+						</div>
+						<div class="fact-card">
+							<div class="fact-icon">💻</div>
+							<h3>Digital First</h3>
+							<p>Smart Rwanda initiative driving nationwide digital transformation</p>
+						</div>
+						<div class="fact-card">
+							<div class="fact-icon">🏛️</div>
+							<h3>Stable Governance</h3>
+							<p>Strong institutions and business-friendly policies</p>
+						</div>
+						<div class="fact-card">
+							<div class="fact-icon">🚀</div>
+							<h3>Innovation Hubs</h3>
+							<p>Home to Norrsken House, Impact Hub, and thriving startup ecosystem</p>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- CTA Section -->
+			<section class="cta-section">
+				<div class="container">
+					<div class="cta-content">
+						<h2>Ready to Start Your Rwanda Journey?</h2>
+						<p>Get insights, tips, and real experiences from someone who's been through the process</p>
+						<div class="cta-actions">
+							<a href="/blog" class="cta-primary">Explore All Posts</a>
+							<a href="mailto:timothyolaleke@gmail.com" class="cta-secondary">Get in Touch</a>
+						</div>
+					</div>
+				</div>
+			</section>
 		</main>
 		<Footer />
 	</body>
 </html>
+
+<style>
+	/* Global Styles */
+	* {
+		box-sizing: border-box;
+	}
+
+	.container {
+		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 1rem;
+	}
+
+	/* Hero Section */
+	.hero {
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		padding: 4rem 1rem;
+		display: flex;
+		align-items: center;
+		min-height: 80vh;
+		position: relative;
+		overflow: hidden;
+	}
+
+	.hero::before {
+		content: '';
+		position: absolute;
+		top: 0;
+		left: 0;
+		right: 0;
+		bottom: 0;
+		background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><defs><pattern id="grain" width="100" height="100" patternUnits="userSpaceOnUse"><circle cx="50" cy="50" r="1" fill="white" opacity="0.1"/></pattern></defs><rect width="100" height="100" fill="url(%23grain)"/></svg>');
+		pointer-events: none;
+	}
+
+	.hero-content {
+		flex: 1;
+		max-width: 600px;
+		z-index: 2;
+	}
+
+	.hero-badge {
+		background: rgba(255, 255, 255, 0.2);
+		backdrop-filter: blur(10px);
+		border: 1px solid rgba(255, 255, 255, 0.3);
+		border-radius: 50px;
+		padding: 0.5rem 1rem;
+		font-size: 0.9rem;
+		display: inline-block;
+		margin-bottom: 1rem;
+	}
+
+	.hero h1 {
+		font-size: 3.5rem;
+		font-weight: 800;
+		margin-bottom: 1.5rem;
+		line-height: 1.1;
+	}
+
+	.highlight {
+		background: linear-gradient(120deg, #FFD700, #FFA500);
+		-webkit-background-clip: text;
+		-webkit-text-fill-color: transparent;
+		background-clip: text;
+	}
+
+	.hero-description {
+		font-size: 1.3rem;
+		line-height: 1.6;
+		margin-bottom: 2rem;
+		opacity: 0.9;
+	}
+
+	.hero-actions {
+		display: flex;
+		gap: 1rem;
+		flex-wrap: wrap;
+	}
+
+	.cta-primary, .cta-secondary {
+		padding: 1rem 2rem;
+		border-radius: 12px;
+		text-decoration: none;
+		font-weight: 600;
+		font-size: 1.1rem;
+		transition: all 0.3s ease;
+		display: inline-block;
+	}
+
+	.cta-primary {
+		background: white;
+		color: #667eea;
+	}
+
+	.cta-primary:hover {
+		transform: translateY(-2px);
+		box-shadow: 0 8px 25px rgba(0, 0, 0, 0.2);
+	}
+
+	.cta-secondary {
+		background: transparent;
+		color: white;
+		border: 2px solid rgba(255, 255, 255, 0.3);
+	}
+
+	.cta-secondary:hover {
+		background: rgba(255, 255, 255, 0.1);
+		border-color: white;
+	}
+
+	.hero-visual {
+		flex: 1;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+
+	.flag-container {
+		perspective: 1000px;
+	}
+
+	.rwanda-flag {
+		width: 300px;
+		height: 200px;
+		position: relative;
+		border-radius: 12px;
+		overflow: hidden;
+		box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+		transform: rotateY(-15deg) rotateX(5deg);
+		transition: transform 0.3s ease;
+	}
+
+	.rwanda-flag:hover {
+		transform: rotateY(0deg) rotateX(0deg);
+	}
+
+	.flag-stripe {
+		height: 33.33%;
+		position: relative;
+	}
+
+	.flag-stripe.blue {
+		background: #00A1DE;
+	}
+
+	.flag-stripe.yellow {
+		background: #FFD100;
+	}
+
+	.flag-stripe.green {
+		background: #00A651;
+	}
+
+	.flag-sun {
+		position: absolute;
+		top: 20px;
+		right: 20px;
+		font-size: 2rem;
+		animation: rotate 20s linear infinite;
+	}
+
+	@keyframes rotate {
+		from { transform: rotate(0deg); }
+		to { transform: rotate(360deg); }
+	}
+
+	/* Stats Section */
+	.stats-section {
+		padding: 4rem 1rem;
+		background: #f8fafc;
+	}
+
+	.stats-section h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		color: #1a202c;
+	}
+
+	.stats-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+		gap: 2rem;
+	}
+
+	.stat-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 16px;
+		text-align: center;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+		transition: transform 0.3s ease;
+	}
+
+	.stat-card:hover {
+		transform: translateY(-5px);
+	}
+
+	.stat-number {
+		font-size: 3rem;
+		font-weight: 800;
+		color: #667eea;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-label {
+		font-size: 1.1rem;
+		font-weight: 600;
+		color: #4a5568;
+		margin-bottom: 0.5rem;
+	}
+
+	.stat-desc {
+		color: #718096;
+		font-size: 0.9rem;
+	}
+
+	/* Journey Section */
+	.journey-section {
+		padding: 4rem 1rem;
+		background: white;
+	}
+
+	.journey-section h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+		color: #1a202c;
+	}
+
+	.journey-subtitle {
+		text-align: center;
+		font-size: 1.2rem;
+		color: #718096;
+		margin-bottom: 3rem;
+	}
+
+	.journey-timeline {
+		position: relative;
+		max-width: 800px;
+		margin: 0 auto;
+	}
+
+	.timeline-line {
+		position: absolute;
+		left: 30px;
+		top: 0;
+		bottom: 0;
+		width: 3px;
+		background: linear-gradient(to bottom, #667eea, #e2e8f0);
+		border-radius: 2px;
+	}
+
+	.journey-step {
+		display: flex;
+		margin-bottom: 3rem;
+		position: relative;
+	}
+
+	.step-icon {
+		width: 60px;
+		height: 60px;
+		border-radius: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		font-size: 1.5rem;
+		margin-right: 2rem;
+		flex-shrink: 0;
+		z-index: 2;
+	}
+
+	.journey-step.active .step-icon {
+		background: linear-gradient(135deg, #667eea, #764ba2);
+		color: white;
+		box-shadow: 0 4px 20px rgba(102, 126, 234, 0.4);
+	}
+
+	.journey-step.upcoming .step-icon {
+		background: #f7fafc;
+		border: 3px solid #e2e8f0;
+		color: #a0aec0;
+	}
+
+	.step-content {
+		flex: 1;
+		background: white;
+		padding: 2rem;
+		border-radius: 16px;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+		border: 2px solid transparent;
+		transition: all 0.3s ease;
+	}
+
+	.journey-step.active .step-content {
+		border-color: #667eea;
+		transform: translateY(-2px);
+	}
+
+	.step-content h3 {
+		font-size: 1.5rem;
+		color: #1a202c;
+		margin-bottom: 1rem;
+	}
+
+	.step-content p {
+		color: #4a5568;
+		line-height: 1.6;
+		margin-bottom: 1rem;
+	}
+
+	.step-link {
+		color: #667eea;
+		text-decoration: none;
+		font-weight: 600;
+		transition: color 0.3s ease;
+	}
+
+	.step-link:hover {
+		color: #5a67d8;
+	}
+
+	.step-meta {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+		margin-top: 1rem;
+		padding-top: 1rem;
+		border-top: 1px solid #e2e8f0;
+	}
+
+	.step-date {
+		color: #718096;
+		font-size: 0.9rem;
+	}
+
+	.step-status {
+		background: #48bb78;
+		color: white;
+		padding: 0.25rem 0.75rem;
+		border-radius: 12px;
+		font-size: 0.8rem;
+		font-weight: 600;
+	}
+
+	.upcoming-status {
+		background: #ed8936;
+	}
+
+	/* Facts Section */
+	.facts-section {
+		padding: 4rem 1rem;
+		background: #f8fafc;
+	}
+
+	.facts-section h2 {
+		text-align: center;
+		font-size: 2.5rem;
+		margin-bottom: 3rem;
+		color: #1a202c;
+	}
+
+	.facts-grid {
+		display: grid;
+		grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+		gap: 2rem;
+	}
+
+	.fact-card {
+		background: white;
+		padding: 2rem;
+		border-radius: 16px;
+		text-align: center;
+		box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+		transition: transform 0.3s ease;
+	}
+
+	.fact-card:hover {
+		transform: translateY(-5px);
+	}
+
+	.fact-icon {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.fact-card h3 {
+		font-size: 1.3rem;
+		color: #1a202c;
+		margin-bottom: 1rem;
+	}
+
+	.fact-card p {
+		color: #4a5568;
+		line-height: 1.6;
+	}
+
+	/* CTA Section */
+	.cta-section {
+		padding: 4rem 1rem;
+		background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+		color: white;
+		text-align: center;
+	}
+
+	.cta-content h2 {
+		font-size: 2.5rem;
+		margin-bottom: 1rem;
+	}
+
+	.cta-content p {
+		font-size: 1.2rem;
+		margin-bottom: 2rem;
+		opacity: 0.9;
+	}
+
+	.cta-actions {
+		display: flex;
+		gap: 1rem;
+		justify-content: center;
+		flex-wrap: wrap;
+	}
+
+	.cta-section .cta-primary {
+		background: white;
+		color: #667eea;
+	}
+
+	.cta-section .cta-secondary {
+		background: transparent;
+		color: white;
+		border: 2px solid rgba(255, 255, 255, 0.3);
+	}
+
+	/* Responsive Design */
+	@media (max-width: 768px) {
+		.hero {
+			flex-direction: column;
+			text-align: center;
+			padding: 3rem 1rem;
+		}
+
+		.hero h1 {
+			font-size: 2.5rem;
+		}
+
+		.hero-description {
+			font-size: 1.1rem;
+		}
+
+		.rwanda-flag {
+			width: 250px;
+			height: 167px;
+			margin-top: 2rem;
+		}
+
+		.stats-grid {
+			grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+		}
+
+		.journey-step {
+			flex-direction: column;
+		}
+
+		.step-icon {
+			margin-right: 0;
+			margin-bottom: 1rem;
+			align-self: flex-start;
+		}
+
+		.timeline-line {
+			display: none;
+		}
+
+		.facts-grid {
+			grid-template-columns: 1fr;
+		}
+
+		.cta-content h2 {
+			font-size: 2rem;
+		}
+
+		.cta-actions {
+			flex-direction: column;
+			align-items: center;
+		}
+
+		.cta-primary, .cta-secondary {
+			width: 100%;
+			max-width: 300px;
+		}
+	}
+</style>
